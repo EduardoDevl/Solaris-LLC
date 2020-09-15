@@ -1,0 +1,42 @@
+<img id="back" src="subir-btn.png">
+
+    <div id="quadro-negro"></div>
+
+    <script src="lib/jquery.min.js"></script> 
+        <script src="lib/system.js"></script>
+		<script type="text/javascript">
+			jquery(document).ready(function($) {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('#back').fadeIn();
+					}else {
+						$('#back').fadeOut();
+					}
+				});
+
+				// scroll body to 0px on click
+				$('#back').click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		</script>
+
+		Aceite todas as bandeiras no débito, crédito, vale refeição e alimentação
+
+		Aceite as principais bandeiras
+
+		Crédito, débito e outros
+
+		Voucher
+
+			background: rgb(243,243,243);
+
+			<a href="Taxa.html" class="btn btn-orange" tabindex="0">Taxa</a>
+			<a href="Maquininha.html" class="btn btn-orange" tabindex="0">Maquininha</a>
+			<a href="Ajuda.html" class="btn btn-orange" tabindex="0">Ajuda</a>
+
+			<div class="carregando" id="carregando"><img src="img/carregando.gif"></div>
+			<div class="corpo" id="corpo">

@@ -1,0 +1,508 @@
+body {
+	background: rgb(243,243,243);
+}
+
+.corpo {
+	display: none;
+}
+
+.carregando {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: 50% 50% no-repeat;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+}
+
+#progressbar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 7px;
+	border-radius: 10px;
+	background: gray;
+	z-index: 20000000;
+}
+
+.menu-drop {
+	top: 230px;
+	z-index: 888;
+}
+
+.menu-drop ul li {
+	background: #FFA500;
+	float: left;
+	width: 200px;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+	box-shadow: 0.2em 4px #FF4500;
+	line-height: 40px;
+	font-size: 16px;
+	position: relative;
+	color: #363636;
+	font-family: "arial";
+	font-weight: 700;
+}
+
+li {
+	margin-right: 8px;
+}
+
+.menu-drop ul li:hover {
+	background-color: #FF8C00;
+	text-decoration: none;
+}
+
+.menu-drop ul {
+	padding: 0;
+}
+
+.menu-drop ul ul {     
+	display: none;
+	position: relative;
+	right: 0	px;
+}
+
+.menu-drop ul li:hover > ul {
+	display: block;
+}
+
+.menu-drop ul ul ul {
+	margin-left: 202px;
+	top: 0px;
+	position: absolute;
+	left: 0px;
+}
+
+#check {
+	display: none;
+}
+
+#icone {
+	cursor: pointer;
+	padding: 15px;
+	position: absolute;
+	z-index: 200001;
+}
+
+.barra {
+	background: #333;
+	height: 100%;
+	width: 300px;
+	position: absolute;
+	transition: all .2s linear; 
+	left: -300px;
+	z-index: 200000;
+}
+
+nav {
+	width: 100%;
+	position: absolute;
+	top: 60px;
+}
+
+nav a{
+	text-decoration: none;
+}
+
+.link {
+	background-color: #494950;
+	padding: 20px;
+	font-family: 'Arial';
+	font-size: 12pt;
+	transition: all .2s linear;
+	color: #F4F4F9;
+	border-bottom: 2px solid #222;
+	z-index:9999;
+	opacity: 0;
+	margin-top: 200px;
+}
+
+.link:hover {
+	background-color: #FFA500;
+
+}
+
+#check:checked ~ .barra {
+	transform: translateX(300px);
+	position: fixed;
+}
+
+#check:checked ~ .barra nav a .link {
+	opacity: 1;
+	margin-top: 0;
+	transition-delay: .2s;
+}
+
+.img-principal{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -moz-user-select: none;
+    user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	pointer-events: none;
+}
+
+.img-SOlaris { 
+	width: 1340px; 
+	padding: 10px;
+	background:	black;
+	display: flex;
+	height: 260px;
+	-moz-user-select: none;
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	pointer-events: none;
+}
+
+header {
+	background: black;
+}
+
+.box {
+	position: absolute;
+	top: 250px;
+	left: 50%;
+}
+
+.box select {
+	background: #FFA500;
+	left: 500px;
+	color: #363636;
+	width: 250px;
+	height: 40px;
+	position: absolute;
+	border: none;
+	box-shadow: 0.2em 4px #FF4500;
+	-webkit-appearance: button;
+	outline: none;
+	text-transform: uppercase;
+	font-family: arial;
+	font-size: 14px;
+	transform: translate(-50%, -50%);
+	font-weight: 700;
+	border: none;
+	padding: 10px 35px;
+	cursor: pointer;
+}
+
+.box:before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #FFF;
+	font-size: 28px;
+	background: #007CE0;
+	pointer-events: none;
+}
+
+.box:hover:before {
+	background: #0472CA;
+}
+
+h1 {
+	margin-bottom: 10px;
+	margin-left: 15px;
+	bottom: 650px;
+	position: relative;
+	color: #363636;
+	font-size: 40px;
+	font-family: 'Anton', sans-serif;
+	text-transform: uppercase;
+}
+
+h2 {
+	margin-left: 15px;
+	bottom: 635px;
+	position: relative;
+	color: #1C1C1C;
+	font-family: 'Abel', sans-serif;
+	font-size: 25px;
+}
+
+#redes-sociais {
+	margin: 50px auto;
+	width: 1025px;
+	height: 150px;
+	z-index: 2;
+	top: 2880px;
+	position: absolute;
+	left: 10%;
+	-moz-user-select: none;
+    user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+
+}
+
+.rede {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-left: 64px;
+	transition: all 0.4s ease-out;
+	border-radius: 50%;
+}
+
+.rede:hover {
+	cursor: pointer;
+	transform: translateY(-20px);
+	box-shadow: 4px 30px 16px 0px rgba(50, 50, 50, 0.45);
+}
+
+.rede#facebook {
+	background-color: #2372A3; 
+}
+
+.rede#twitter {
+	background-color: #0084B4; 
+}
+
+.rede#instagram {
+	background-color: #3F729B;
+}
+
+.rede#snap {
+	background-color: #FC0;
+}
+
+.rede#plus {
+	background-color: #DD4B39;
+}
+
+.rede#youtube {
+	background-color: #B00;
+}
+
+.icone {
+	margin: 0px auto;
+	padding: 26px;
+	width: 46px;
+	height: 46px;
+}
+
+.anuncio {
+	width: 1360px;
+	height: 700px;
+	-moz-user-select: none;
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	pointer-events: none;
+}
+
+.compreaqui {
+	font-family: arial;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+	border: none;
+	padding: 15px 50px;
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	position: absolute;
+	top: 920px;
+	margin: 0 15px;
+	background: #FFA500;
+	color: #363636;
+	box-shadow: 0.2em 4px #FF4500;
+	right: 580px;
+}
+
+
+
+.btn-voltar {
+	display: none;
+	position: fixed;
+	bottom: 4%;
+	right: 1%;
+	padding: 30px;
+	cursor: pointer;
+}
+
+.btn {
+	font-family: arial;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+	border: none;
+	padding: 10px 35px;
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	position: relative;
+	top: 245px;
+	margin: 0 15px;
+}
+
+.btn-orange {
+	background: #FFA500;
+	color: #363636;
+	box-shadow: 0.2em 4px #FF4500;
+}
+
+.btn-orange:active {
+	top: 250px;
+	box-shadow: none;
+}
+
+.h1text-propaganda {
+	top: 100px;
+}
+
+.h2text-propaganda {
+	top: 99px;
+}
+
+.text {
+    background-image: linear-gradient(to right, transparent, black, transparent);
+    background-size: 100% 4px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-image: linear-gradient(to right, rgba(200, 200, 200, 0), rgba(200, 200, 200, 1), rgba(200, 200, 200, 0));
+}
+
+.descontoh1 {
+	font-size: 45px;
+	bottom: 680px;
+}
+
+.descontoh2 {
+	font-size: 30px;
+	bottom: 680px;
+}
+
+.gif-nego {
+	width: 300px;
+	height: 250px;
+	position: relative;
+	left: 990px;
+	top: 0px;
+	border-radius: 10px;
+}
+
+.linha-gradiente {
+	background-image: linear-gradient(to right, transparent, black, transparent);
+    background-size: 100% 4px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-image: linear-gradient(to right, rgba(200, 200, 200, 0), rgba(200, 200, 200, 1), rgba(200, 200, 200, 0)); 
+}
+
+.apre-verosinha-pergunta {
+	top: 300px;
+	font-size: 35px;
+}
+
+.apre-verosinhah1 {
+	top: 500px;
+	font-size: 35px;
+}
+
+.apre-verosinhah2 {
+	top: 510px;
+	font-size: 25px;
+}
+
+.verosinha {
+	background-image: linear-gradient(to right, transparent, black, transparent);
+    background-size: 100% 4px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-image: linear-gradient(to right, rgba(200, 200, 200, 0), rgba(200, 200, 200, 1), rgba(200, 200, 200, 0)); 
+    position: relative;
+    bottom: 50px;
+    z-index: 1;
+}
+
+.verosinha-img {
+	width: 1360px;
+	height: 700px;
+	top: 5px;
+	position: relative;
+}
+
+.compreaqui-verosinha {
+	font-family: arial;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+	border: none;
+	padding: 15px 50px;
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	position: absolute;
+	top: 2350px;
+	margin: 0 15px;
+	background: #FFA500;
+	color: #363636;
+	box-shadow: 0.2em 4px #FF4500;
+	right: 580px;
+	z-index: 1;
+}
+
+.solaris-trans {
+	z-index: 1;
+	position: absolute;
+	left: 30%;
+	top: 2425px;
+	-moz-user-select: none;
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	pointer-events: none;
+}
+
+.rodape-pg {
+	width: 1360px;
+	height: 700px;
+}
+
+@media (max-width: 620px) {
+	.img-SOlaris {
+		width: 100%;
+		height: 100%;
+	}
+
+	.img-principal {
+		width: 100%;
+		height: 100%;
+	}
+
+	.anuncio {
+		width: 100%;
+		height: 100%;
+	}
+
+
+}

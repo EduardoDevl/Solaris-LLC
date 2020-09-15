@@ -1,0 +1,83 @@
+.h1pri {
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.solaris-transs {
+	z-index: 1;
+	position: absolute;
+	left: 30%;
+	top: 2470px;
+	-moz-user-select: none;
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	pointer-events: none;
+}
+
+#redes-sociaiss {
+	margin: 50px auto;
+	width: 1025px;
+	height: 150px;
+	z-index: 2;
+	top: 2900px;
+	position: absolute;
+	left: 10%;
+	-moz-user-select: none;
+    user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+
+}
+
+.redee {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-left: 64px;
+	transition: all 0.4s ease-out;
+	border-radius: 50%;
+}
+
+.redee:hover {
+	cursor: pointer;
+	transform: translateY(-20px);
+	box-shadow: 4px 30px 16px 0px rgba(50, 50, 50, 0.45);
+}
+
+.redee#facebookk {
+	background-color: #2372A3; 
+}
+
+.redee#twitterr {
+	background-color: #0084B4; 
+}
+
+.redee#instagramm {
+	background-color: #3F729B;
+}
+
+.redee#snapp {
+	background-color: #FC0;
+}
+
+.redee#pluss {
+	background-color: #DD4B39;
+}
+
+.redee#youtubee {
+	background-color: #B00;
+}
+
+.iconee {
+	margin: 0px auto;
+	padding: 26px;
+	width: 46px;
+	height: 46px;
+}
