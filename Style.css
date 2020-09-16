@@ -34,7 +34,7 @@ body {
 	z-index: 888;
 }
 
-.menu-drop ul li {
+.menu-drop ul li  {
 	background: #FFA500;
 	float: left;
 	width: 200px;
@@ -48,6 +48,10 @@ body {
 	color: #363636;
 	font-family: "arial";
 	font-weight: 700;
+}
+
+.menu-drop ul li a {
+	color: #363636;
 }
 
 li {
